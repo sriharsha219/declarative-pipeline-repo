@@ -42,6 +42,16 @@ echo "Project installed"
     }
 }
 
+stage('Deploy'){
+
+steps{
+
+echo "Deploying sample maven-webapp"
+sh "mvn install"
+echo "Project deployed to Nexus repository"
+    }
+}
+
     }
 
 post {
