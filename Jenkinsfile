@@ -10,7 +10,7 @@ stage('SonarQube Analysis'){
 steps{
 
 echo "Sending code for SonarQube analysis"
-sh "sonar-scanner -Dsonar.projectKey=Declarative-Pipeline -Dsonar.sources=. -Dsonar.host.url=http://18.191.245.96 -Dsonar.login=73fb4a283811a21ea3cfe95b9930ba698b5072ab"
+sh "mvn sonar:sonar -Dsonar.host.url=http://18.191.245.96 -Dsonar.login=73fb4a283811a21ea3cfe95b9930ba698b5072ab"
 echo "Project uploaded to SonarQube"
 echo "Check results in SonarQube"
 input("Do you want to proceed ?")
