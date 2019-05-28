@@ -47,7 +47,7 @@ stage('Deploy'){
 steps{
 
 echo "Deploying sample maven-webapp"
-sh "mvn install"
+sh "mvn deploy"
 echo "Project deployed to Nexus repository"
     }
 }
