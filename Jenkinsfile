@@ -1,5 +1,7 @@
 pipeline{
 
+deleteDir()
+
 agent any
 
 stages{
