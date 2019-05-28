@@ -1,0 +1,6 @@
+projectKey=Declarative-Pipeline
+serverUrl=http://18.191.245.96
+serverVersion=7.7.0.23042
+dashboardUrl=http://18.191.245.96/dashboard?id=Declarative-Pipeline
+ceTaskId=AWsAxEnRotFDti4BXRla
+ceTaskUrl=http://18.191.245.96/api/ce/task?id=AWsAxEnRotFDti4BXRla
