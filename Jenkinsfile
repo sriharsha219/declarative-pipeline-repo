@@ -52,6 +52,16 @@ echo "Project deployed to Nexus repository"
     }
 }
 
+stage('SonarQube Analysis'){
+
+steps{
+
+echo "Sending code for SonarQube analysissample maven-webapp"
+sh "mvn sonar:sonar"
+echo "Project uploaded to SonarQube"
+    }
+}
+
     }
 
 post {
