@@ -45,6 +45,3 @@ echo "Project installed"
     }
 }
 
-}
-
-}
