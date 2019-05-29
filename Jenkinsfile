@@ -4,6 +4,15 @@ agent any
 
 stages{
 
+stage('Compile'){
+
+steps{
+
+echo "Compiling sample maven-webapp"
+sh "mvn clean compile"
+echo "Project compiled"
+    }
+}
 
 stage('SonarQube Analysis'){
 
@@ -14,16 +23,6 @@ sh "mvn sonar:sonar -Dsonar.host.url=http://18.191.245.96 -Dsonar.login=73fb4a28
 echo "Project uploaded to SonarQube"
 echo "Check results in SonarQube"
 input("Do you want to proceed ?")
-    }
-}
-
-stage('Compile'){
-
-steps{
-
-echo "Compiling sample maven-webapp"
-sh "mvn clean compile"
-echo "Project compiled"
     }
 }
 
